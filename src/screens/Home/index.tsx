@@ -7,12 +7,19 @@ import MagnifyingGlass from '../../../assets/MagnifyingGlass.svg';
 import { useNavigation } from '@react-navigation/native';
 
 
+
+
 export function Home() {
   const navigation = useNavigation();
 
   function paginaCadastroRemedio(){
     navigation.navigate('ScreenCadastroRemedio')
   }
+
+  function paginaTelaDeConsulta(){
+    navigation.navigate('ScreenTelaDeConsulta')
+  }
+
 
   return (
     <>
@@ -21,7 +28,7 @@ export function Home() {
         <Title>Seja bem vindo, <TitleVerdeJade>João</TitleVerdeJade>!</Title>
         <CardList>
           <Card title="Cadastrar Medicamentos" description="Cadastro  de medicamentos no estoque" icon={<AddPill />} onPress={paginaCadastroRemedio}/>
-          <Card title="Consultar Medicamentos" description="Consulta de medicamentos no estoque" icon={<MagnifyingGlass />} />
+          <Card title="Consultar Medicamentos" description="Consulta de medicamentos no estoque" icon={<MagnifyingGlass/>}  onPress={paginaTelaDeConsulta}/>
         </CardList>
       </Container>
       </>

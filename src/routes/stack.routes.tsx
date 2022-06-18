@@ -2,6 +2,7 @@ import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import { Home } from '../screens/Home';
 import CadastroRemedio from '../screens/CadastroRemedio';
+import TelaDeConsulta from '../screens/TelaDeConsulta';
 
 const { Screen, Navigator } = createNativeStackNavigator();
 
@@ -20,6 +21,14 @@ export function StackRoutes(){
                 options={{
                     title: 'Cadastro de Remédios'
                 }}  />
+
+            <Screen name="ScreenTelaDeConsulta"
+                component={TelaDeConsulta}
+                options={{
+                    title: 'Consultar  Medicamentos'
+                }}  />
+
+
         </Navigator>
     );
 }
