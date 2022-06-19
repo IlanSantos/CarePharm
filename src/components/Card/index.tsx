@@ -1,7 +1,7 @@
 import { Pressable } from 'react-native';
 import { CardBody, CardContainer, CardDescription, CardHeader, CardIcon, CardIconArrowFront, CardTitle } from "./styles";
 import ArrowFront from '../../../assets/ArrowFront.svg';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 type AtributosCard = {
     title?:string;

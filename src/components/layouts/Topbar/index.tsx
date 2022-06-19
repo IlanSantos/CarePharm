@@ -1,5 +1,5 @@
-import React from "react"
-import { TopbarContainer, TopbarProfile, TopbarProfileAvatar, TopbarProfileCpf, TopbarProfileInfo, TopbarProfileName } from "./styles"
+import React from "react";
+import { TopbarContainer, TopbarProfile, TopbarProfileAvatar, TopbarProfileCpf, TopbarProfileInfo, TopbarProfileName } from "./styles";
 import CarePharmLogo from '../../../../assets/CarePharmLogo.svg';
 import Avatar from '../../../../assets/Avatar46.png';
 import {Shadow} from "react-native-shadow-2";
